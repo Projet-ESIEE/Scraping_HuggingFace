@@ -6,5 +6,7 @@
                  name="Scraping_Twitch_Doc"
                  start-page="starter-topic.md">
 
+    <toc-element topic="Starter.md"/>
     <toc-element topic="starter-topic.md"/>
+    <toc-element topic="FastAPI.md"/>
 </instance-profile>
