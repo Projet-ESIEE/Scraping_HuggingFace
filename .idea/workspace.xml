@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e87ca391-1a00-44cf-9927-d0dd119a153c" name="Changes" comment="init -FastAPI --done" />
+    <list default="true" id="e87ca391-1a00-44cf-9927-d0dd119a153c" name="Changes" comment="WriterSide multi-file">
+      <change beforePath="$PROJECT_DIR$/.idea/Scrapping_Twitch.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/Starter.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Starter.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,18 +20,57 @@
       <list>
         <option value="FastAPI main" />
         <option value="FastAPI test_main" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="InstanceColorv3">
+    <option name="map">
+      <map>
+        <entry key="s.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="1" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="60" />
+                  <option name="darkBlue" value="60" />
+                  <option name="darkGreen" value="68" />
+                  <option name="darkRed" value="206" />
+                  <option name="green" value="68" />
+                  <option name="red" value="206" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="65" />
+                  <option name="darkBlue" value="65" />
+                  <option name="darkGreen" value="126" />
+                  <option name="darkRed" value="231" />
+                  <option name="green" value="126" />
+                  <option name="red" value="231" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2ZRq9q6e133zp877JHXxe1j5T08" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,33 +80,51 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/antoi/PycharmProjects/Scraping_Twitch",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "writerside.last.selected.productScrapping_Twitch": "s"
   }
 }]]></component>
-  <component name="RunManager" selected="FastAPI.Scrapping_Twitch">
-    <configuration name="test_main | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/test_main.http" requestIdentifier="#1" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\antoi\PycharmProjects\Scrapping_Twitch\.github\workflows" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\antoi\PycharmProjects\Scrapping_Twitch\FastAPI" />
+      <recent name="C:\Users\antoi\PycharmProjects\Scrapping_Twitch" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="Scrapping_Twitch" type="Python.FastAPI">
-      <option name="file" value="$PROJECT_DIR$/main.py" />
-      <module name="Scrapping_Twitch" />
+      <option name="file" value="$PROJECT_DIR$/FastAPI/main.py" />
+      <module name="Scraping_Twitch" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\antoi\.virtualenvs\Scrapping_Twitch-FCj_Q3I8\Scripts\python.exe" />
+      <option name="SDK_NAME" value="Pipenv (Scrapping_Twitch)" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </EXTENSION>
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="HTTP Request.test_main | #1" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -69,7 +134,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1702395090821</updated>
-      <workItem from="1702395181549" duration="303000" />
+      <workItem from="1702395181549" duration="4224000" />
+      <workItem from="1702400380824" duration="442000" />
     </task>
     <task id="LOCAL-00001" summary="init -FastAPI --done">
       <option name="closed" value="true" />
@@ -95,7 +161,47 @@
       <option name="project" value="LOCAL" />
       <updated>1702395422517</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".gitignore -FastAPI --done">
+      <option name="closed" value="true" />
+      <created>1702395662558</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702395662558</updated>
+    </task>
+    <task id="LOCAL-00005" summary="WriterSide -init --done">
+      <option name="closed" value="true" />
+      <created>1702396787403</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1702396787403</updated>
+    </task>
+    <task id="LOCAL-00006" summary="test dev">
+      <option name="closed" value="true" />
+      <created>1702396886884</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702396886884</updated>
+    </task>
+    <task id="LOCAL-00007" summary="deploy.yml -add --done">
+      <option name="closed" value="true" />
+      <created>1702397048366</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1702397048366</updated>
+    </task>
+    <task id="LOCAL-00008" summary="WriterSide multi-file">
+      <option name="closed" value="true" />
+      <created>1702400033118</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1702400033118</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,7 +212,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -114,9 +232,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init -FastAPI --done" />
-    <option name="LAST_COMMIT_MESSAGE" value="init -FastAPI --done" />
+    <MESSAGE value=".gitignore -FastAPI --done" />
+    <MESSAGE value="WriterSide -init --done" />
+    <MESSAGE value="test dev" />
+    <MESSAGE value="deploy.yml -add --done" />
+    <MESSAGE value="WriterSide multi-file" />
+    <option name="LAST_COMMIT_MESSAGE" value="WriterSide multi-file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Scrapping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1702395301674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Scrapping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1702395905976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
