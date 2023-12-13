@@ -1,10 +1,10 @@
 import scrapy
 
 
-class TwtchSpider(scrapy.Spider):
-    name = "twtch"
+class TwitchSpider(scrapy.Spider):
+    name = "twitch"
     allowed_domains = ["www.twitch.tv"]
     start_urls = ["https://www.twitch.tv"]
 
     def parse(self, response):
-        pass
+        print(response.css('title::text').extract_first())
