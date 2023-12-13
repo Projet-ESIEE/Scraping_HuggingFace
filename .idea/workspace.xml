@@ -4,15 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e87ca391-1a00-44cf-9927-d0dd119a153c" name="Changes" comment="lil update">
-      <change afterPath="$PROJECT_DIR$/FastAPI/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Scraper/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Writerside/topics/Docker.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="e87ca391-1a00-44cf-9927-d0dd119a153c" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/../DataEngineerTools/5ElasticSearch/test.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.run/main_scaper.run.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scraper/init_scraper.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scraper/main_scaper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/tools.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DataEngineerTools/5ElasticSearch/Introduction.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../DataEngineerTools/5ElasticSearch/Introduction.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/s.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/s.tree" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/Starter.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Scraper.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +30,21 @@
       <list>
         <option value="FastAPI main" />
         <option value="FastAPI test_main" />
-        <option value="Python Script" />
         <option value="Dockerfile" />
+        <option value="PowerShell File" />
+        <option value="Python Script" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -77,6 +95,7 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2ZRq9q6e133zp877JHXxe1j5T08" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -91,7 +110,7 @@
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "advanced.settings",
+    "settings.editor.selected.configurable": "preferences.toDoOptions",
     "writerside.last.selected.productScrapping_Twitch": "s"
   }
 }]]></component>
@@ -100,16 +119,36 @@
       <recent name="C:\Users\antoi\PycharmProjects\Scrapping_Twitch\.github\workflows" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\antoi\PycharmProjects\Scraping_Twitch\Scraper" />
+      <recent name="C:\Users\antoi\PycharmProjects\Scraping_Twitch\FastAPI" />
       <recent name="C:\Users\antoi\PycharmProjects\Scrapping_Twitch\FastAPI" />
       <recent name="C:\Users\antoi\PycharmProjects\Scrapping_Twitch" />
     </key>
   </component>
-  <component name="RunManager" selected="FastAPI.Scrapping_Twitch">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="Python.FastAPI" />
+        <option value="docker-deploy" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.main_scaper">
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Docker.Compose_Twitch" />
       <item itemvalue="FastAPI.Scrapping_Twitch" />
+      <item itemvalue="Python.main_scaper" />
       <item itemvalue="Writerside.Build Scraping_Twitch_Doc (s)" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main_scaper" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -122,7 +161,8 @@
       <workItem from="1702395181549" duration="4224000" />
       <workItem from="1702400380824" duration="479000" />
       <workItem from="1702452577388" duration="42000" />
-      <workItem from="1702461369225" duration="1758000" />
+      <workItem from="1702461369225" duration="2746000" />
+      <workItem from="1702467530039" duration="7505000" />
     </task>
     <task id="LOCAL-00001" summary="init -FastAPI --done">
       <option name="closed" value="true" />
@@ -196,7 +236,31 @@
       <option name="project" value="LOCAL" />
       <updated>1702400855063</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="many update">
+      <option name="closed" value="true" />
+      <created>1702463197774</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1702463197774</updated>
+    </task>
+    <task id="LOCAL-00011" summary="config file">
+      <option name="closed" value="true" />
+      <created>1702463391760</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1702463391760</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update">
+      <option name="closed" value="true" />
+      <created>1702464156571</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1702464156571</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,9 +297,16 @@
     <MESSAGE value="deploy.yml -add --done" />
     <MESSAGE value="WriterSide multi-file" />
     <MESSAGE value="lil update" />
-    <option name="LAST_COMMIT_MESSAGE" value="lil update" />
+    <MESSAGE value="many update" />
+    <MESSAGE value="config file" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$main.coverage" NAME="main_scaper Coverage Results" MODIFIED="1702471723097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scraper" />
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1702463891837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$main_scaper.coverage" NAME="main_scaper Coverage Results" MODIFIED="1702470033093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scraper" />
     <SUITE FILE_PATH="coverage/Scrapping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1702395905976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$tools.coverage" NAME="tools Coverage Results" MODIFIED="1702472137360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
   </component>
 </project>
