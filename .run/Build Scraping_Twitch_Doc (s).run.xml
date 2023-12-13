@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Build Scraping_Twitch_Doc (s)" type="StardustRunConfiguration" factoryName="save-as-zip">
+    <option name="folderPath" value="$PROJECT_DIR$" />
+    <option name="instanceId" value="s" />
+    <option name="instanceName" value="Scraping_Twitch_Doc" />
+    <method v="2" />
+  </configuration>
+</component>
