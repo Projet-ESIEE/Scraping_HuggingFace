@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e87ca391-1a00-44cf-9927-d0dd119a153c" name="Changes" comment="WriterSide multi-file">
-      <change beforePath="$PROJECT_DIR$/.idea/Scrapping_Twitch.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="e87ca391-1a00-44cf-9927-d0dd119a153c" name="Changes" comment="lil update">
+      <change afterPath="$PROJECT_DIR$/FastAPI/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Scraper/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Writerside/topics/Docker.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Writerside/topics/Starter.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Starter.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/s.tree" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/s.tree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Writerside/topics/Starter.md" beforeDir="false" afterPath="$PROJECT_DIR$/Writerside/topics/Scraper.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,7 @@
         <option value="FastAPI main" />
         <option value="FastAPI test_main" />
         <option value="Python Script" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -82,11 +87,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/antoi/PycharmProjects/Scraping_Twitch",
+    "last_opened_file_path": "C:/Users/antoi/PycharmProjects/Scraping_Twitch/docker-compose.yml",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "advanced.settings",
     "writerside.last.selected.productScrapping_Twitch": "s"
   }
 }]]></component>
@@ -99,32 +104,12 @@
       <recent name="C:\Users\antoi\PycharmProjects\Scrapping_Twitch" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Scrapping_Twitch" type="Python.FastAPI">
-      <option name="file" value="$PROJECT_DIR$/FastAPI/main.py" />
-      <module name="Scraping_Twitch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\Users\antoi\.virtualenvs\Scrapping_Twitch-FCj_Q3I8\Scripts\python.exe" />
-      <option name="SDK_NAME" value="Pipenv (Scrapping_Twitch)" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </EXTENSION>
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Docker.Compose_Twitch">
+    <list>
+      <item itemvalue="Docker.Compose_Twitch" />
+      <item itemvalue="FastAPI.Scrapping_Twitch" />
+      <item itemvalue="Writerside.Build Scraping_Twitch_Doc (s)" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -135,7 +120,9 @@
       <option name="presentableId" value="Default" />
       <updated>1702395090821</updated>
       <workItem from="1702395181549" duration="4224000" />
-      <workItem from="1702400380824" duration="442000" />
+      <workItem from="1702400380824" duration="479000" />
+      <workItem from="1702452577388" duration="42000" />
+      <workItem from="1702461369225" duration="1758000" />
     </task>
     <task id="LOCAL-00001" summary="init -FastAPI --done">
       <option name="closed" value="true" />
@@ -201,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702400033118</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="lil update">
+      <option name="closed" value="true" />
+      <created>1702400855063</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1702400855063</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +232,8 @@
     <MESSAGE value="test dev" />
     <MESSAGE value="deploy.yml -add --done" />
     <MESSAGE value="WriterSide multi-file" />
-    <option name="LAST_COMMIT_MESSAGE" value="WriterSide multi-file" />
+    <MESSAGE value="lil update" />
+    <option name="LAST_COMMIT_MESSAGE" value="lil update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Scrapping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1702395905976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

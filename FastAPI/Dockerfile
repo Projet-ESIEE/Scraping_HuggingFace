@@ -1,0 +1,13 @@
+# FastAPI Dockerfile
+FROM python:3.11.2
+
+WORKDIR /app
+
+COPY ./Pipfile /app/Pipfile
+COPY ./Pipfile.lock /app/Pipfile.lock
+
+RUN pip install pipenv && pipenv install --system --deploy
+
+COPY . /app
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]

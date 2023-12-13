@@ -1,0 +1,30 @@
+version: '3.11'
+services:
+  fastapi:
+    build: ./FastAPI
+    volumes:
+      - shared_volume:/app
+    depends_on:
+      - mongodb
+      - elasticsearch
+  scrapy:
+    build: ./Scraper
+    volumes:
+      - shared_volume:/app
+    depends_on:
+      - mongodb
+      - elasticsearch
+  mongodb:
+    image: mongo:latest
+    volumes:
+      - mongodb_data:/data/db
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+    environment:
+      - discovery.type=single-node
+volumes:
+  shared_volume:
+  mongodb_data:
+  elasticsearch_data:
