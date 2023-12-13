@@ -2,6 +2,7 @@ version: '3.11'
 services:
   fastapi:
     build: ./FastAPI
+    container_name: ST_fastapi
     volumes:
       - shared_volume:/app
     depends_on:
@@ -9,6 +10,7 @@ services:
       - elasticsearch
   scrapy:
     build: ./Scraper
+    container_name: ST_scraper
     volumes:
       - shared_volume:/app
     depends_on:
@@ -16,10 +18,12 @@ services:
       - elasticsearch
   mongodb:
     image: mongo:latest
+    container_name: ST_mongodb
     volumes:
       - mongodb_data:/data/db
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.10.2
+    container_name: ST_elasticsearch
     volumes:
       - elasticsearch_data:/usr/share/elasticsearch/data
     environment:
