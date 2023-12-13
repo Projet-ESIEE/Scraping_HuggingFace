@@ -44,7 +44,7 @@ Here's an example of how your project structure might look:
 In each Dockerfile, you would copy the corresponding Pipfile and install the dependencies like this:
 
 ```dockerfile
-# Dockerfile for service1
+# Dockerfile-FastAPI-Scraper for service1
 FROM python:3.11.2
 
 WORKDIR /app
