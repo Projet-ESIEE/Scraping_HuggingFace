@@ -7,4 +7,8 @@ class TwitchSpider(scrapy.Spider):
     start_urls = ["https://www.twitch.tv"]
 
     def parse(self, response):
-        print(response.css('title::text').extract_first())
+        title = response.css('title::text').extract_first()
+        yield {
+            "title": title,
+        }
+

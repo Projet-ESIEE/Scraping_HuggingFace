@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="e87ca391-1a00-44cf-9927-d0dd119a153c" name="Changes" comment="Nouvelle architecture">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/main_scaper.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.run/Scaper.run.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FastAPI/Dockerfile-FastAPI" beforeDir="false" afterPath="$PROJECT_DIR$/FastAPI/Dockerfile-FastAPI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Scraper/Dockerfile-Scraper" beforeDir="false" afterPath="$PROJECT_DIR$/Scraper/Dockerfile-Scraper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/twitch_crawler/twitch_crawler/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scraper/twitch_crawler/twitch_crawler/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/twitch_crawler/twitch_crawler/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scraper/twitch_crawler/twitch_crawler/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/twitch_crawler/twitch_crawler/spiders/twitch.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scraper/twitch_crawler/twitch_crawler/spiders/twitch.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,11 +98,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "FastAPI.Scrapping_Twitch.executor": "Run",
+    "Python.Scaper.executor": "Run",
+    "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/antoi/PycharmProjects/Scraping_Twitch/Mongo",
+    "last_opened_file_path": "C:/Users/antoi/PycharmProjects/Scraping_Twitch/Scraper/twitch_crawler/twitch_crawler/spiders/twitch.py",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -128,7 +136,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="FastAPI.Scrapping_Twitch">
+  <component name="RunManager" selected="Python.Scaper">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -144,7 +152,7 @@
     <list>
       <item itemvalue="Docker.docker-compose" />
       <item itemvalue="FastAPI.Scrapping_Twitch" />
-      <item itemvalue="Python.main_scaper" />
+      <item itemvalue="Python.Scaper" />
     </list>
     <recent_temporary>
       <list>
@@ -176,7 +184,7 @@
       <workItem from="1702481452982" duration="4320000" />
       <workItem from="1702492677874" duration="796000" />
       <workItem from="1702988441117" duration="66000" />
-      <workItem from="1702988528263" duration="6176000" />
+      <workItem from="1702988528263" duration="10426000" />
     </task>
     <task id="LOCAL-00001" summary="init -FastAPI --done">
       <option name="closed" value="true" />
@@ -322,7 +330,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702993180144</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Nouvelle architecture">
+      <option name="closed" value="true" />
+      <created>1702997026849</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1702997026849</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +355,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="dev" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -370,10 +386,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Nouvelle architecture" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Scraping_Twitch$main.coverage" NAME="main_scaper Coverage Results" MODIFIED="1702471723097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scraper" />
-    <SUITE FILE_PATH="coverage/Scraping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1702463891837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$main.coverage" NAME="main Coverage Results" MODIFIED="1702996574334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FastAPI" />
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1702996556316" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Scraping_Twitch$main_scaper.coverage" NAME="main_scaper Coverage Results" MODIFIED="1702470033093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scraper" />
-    <SUITE FILE_PATH="coverage/Scrapping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1702395905976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$Scaper.coverage" NAME="Scaper Coverage Results" MODIFIED="1702998042783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scraper" />
     <SUITE FILE_PATH="coverage/Scraping_Twitch$tools.coverage" NAME="tools Coverage Results" MODIFIED="1702472137360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/Scrapping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1702395905976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

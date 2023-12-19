@@ -1,6 +1,7 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="main_scaper" type="PythonConfigurationType" factoryName="Python">
+  <configuration default="false" name="Scaper" type="PythonConfigurationType" factoryName="Python">
     <module name="Scraping_Twitch" />
+    <option name="ENV_FILES" value="" />
     <option name="INTERPRETER_OPTIONS" value="" />
     <option name="PARENT_ENVS" value="true" />
     <envs>
@@ -22,7 +23,7 @@
         <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
       </ENTRIES>
     </EXTENSION>
-    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scraper/main_scaper.py" />
+    <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Scraper/twitch_crawler/twitch_crawler/spiders/twitch.py" />
     <option name="PARAMETERS" value="" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />

@@ -1,13 +1,12 @@
 # FastAPI Dockerfile-ElasticSearch-Mongo-FastAPI-Scraper
 FROM python:3.11.2
 
-WORKDIR /app
+WORKDIR /code
 
-COPY ./Pipfile /app/Pipfile
-COPY ./Pipfile.lock /app/Pipfile.lock
+COPY ./requirements.txt /code/requirements.txt
 
-RUN pip install pipenv && pipenv install --system --deploy
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
-COPY FastAPI /app
+COPY ./app /code/app
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
