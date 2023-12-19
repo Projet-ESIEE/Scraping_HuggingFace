@@ -1,10 +1,10 @@
-# Scrapy Dockerfile-FastAPI-Scraper
+# Scrapy Dockerfile-ElasticSearch-Mongo-FastAPI-Scraper
 FROM python:3.11.2
 
 WORKDIR /app
 
-COPY Pipfile /app/Pipfile
-COPY Pipfile.lock /app/Pipfile.lock
+COPY ../Pipfile /app/Pipfile
+COPY ../Pipfile.lock /app/Pipfile.lock
 
 RUN pip install pipenv && pipenv install --system --deploy
 # TODO : Dans cette config toutes les dépendances de pipfile vont etre installé, peut import la nécéssité du service

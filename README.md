@@ -9,7 +9,7 @@ Ongoing project to scrap Twitch.tv
 *This is the Dev BRanch*
 
 > Information :
-The documentation is located : **[Here](htts://github.com/Scraping_Twitch)**
+The documentation is located : **[Here](https://github.com/Scraping_Twitch)**
 
 ### This is a project made at **ESIEE Paris** for the **DataEngineering** course.
 
@@ -44,7 +44,7 @@ Here's an example of how your project structure might look:
 In each Dockerfile, you would copy the corresponding Pipfile and install the dependencies like this:
 
 ```dockerfile
-# Dockerfile-FastAPI-Scraper for service1
+# Dockerfile-ElasticSearch-Mongo-FastAPI-Scraper for service1
 FROM python:3.11.2
 
 WORKDIR /app
