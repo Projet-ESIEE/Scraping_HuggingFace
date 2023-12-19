@@ -1,21 +1,10 @@
-# Scrapy Dockerfile-ElasticSearch-Mongo-FastAPI-Scraper
+# Scrapy Dockerfile-Scraper
 FROM python:3.11.2
 
 WORKDIR /app
 
-COPY ../Pipfile /app/Pipfile
-COPY ../Pipfile.lock /app/Pipfile.lock
+COPY ./requirements.txt .
 
-RUN pip install pipenv && pipenv install --system --deploy
-# TODO : Dans cette config toutes les dépendances de pipfile vont etre installé, peut import la nécéssité du service
-
-COPY Scraper /app
+RUN pip install -r requirements.txt
 
 CMD ["scrapy", "crawl", "my_spider"]
-
-#RUN echo "--------------------------"
-#RUN echo "<--   init_scraper.sh  -->"
-#RUN echo ""
-#RUN startproject twitch_crawler
-#RUN CD twitch_crawler && scrapy genspider twitch https://www.twitch.tv/
-#RUN scrapy shell "https://www.twitch.tv/"

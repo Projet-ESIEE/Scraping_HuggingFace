@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e87ca391-1a00-44cf-9927-d0dd119a153c" name="Changes" comment="Nouvelle architecture">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.run/Compose_Twitch.run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.run/docker-compose.run.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scraper/init_scraper.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scraper/main_scaper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FastAPI/Dockerfile-FastAPI" beforeDir="false" afterPath="$PROJECT_DIR$/FastAPI/Dockerfile-FastAPI" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/Dockerfile-Scraper" beforeDir="false" afterPath="$PROJECT_DIR$/Scraper/Dockerfile-Scraper" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +91,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "FastAPI.Scrapping_Twitch.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
@@ -128,7 +128,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose">
+  <component name="RunManager" selected="FastAPI.Scrapping_Twitch">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -145,7 +145,6 @@
       <item itemvalue="Docker.docker-compose" />
       <item itemvalue="FastAPI.Scrapping_Twitch" />
       <item itemvalue="Python.main_scaper" />
-      <item itemvalue="Writerside.Build Scraping_Twitch_Doc (s)" />
     </list>
     <recent_temporary>
       <list>
@@ -177,7 +176,7 @@
       <workItem from="1702481452982" duration="4320000" />
       <workItem from="1702492677874" duration="796000" />
       <workItem from="1702988441117" duration="66000" />
-      <workItem from="1702988528263" duration="4585000" />
+      <workItem from="1702988528263" duration="6176000" />
     </task>
     <task id="LOCAL-00001" summary="init -FastAPI --done">
       <option name="closed" value="true" />
@@ -315,7 +314,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702992340030</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Nouvelle architecture">
+      <option name="closed" value="true" />
+      <created>1702993180144</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1702993180144</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
