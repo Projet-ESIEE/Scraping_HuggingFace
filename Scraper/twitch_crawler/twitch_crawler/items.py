@@ -6,7 +6,13 @@
 import scrapy
 
 
-class TwitchCrawlerItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+class TwitchStreamItem(scrapy.Item):
+    """
+    The list of all fields collected
+    """
+    name_streamer = scrapy.Field()
+    name_game = scrapy.Field()
+    live_title = scrapy.Field()
+    live_label = scrapy.Field()
+    live_description = scrapy.Field()
+

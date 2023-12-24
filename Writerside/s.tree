@@ -8,6 +8,6 @@
 
     <toc-element topic="Docker.md"/>
     <toc-element topic="Scraper.md"/>
-    <toc-element topic="Home.md"/>
     <toc-element topic="FastAPI.md"/>
+    <toc-element topic="Home.md"/>
 </instance-profile>

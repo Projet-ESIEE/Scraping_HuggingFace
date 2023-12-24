@@ -1,4 +1,7 @@
-import scrapy
+import scrapy, logging
+from scrapy import Request
+
+from ..items import TwitchStreamItem
 
 
 class TwitchSpider(scrapy.Spider):
@@ -7,8 +10,32 @@ class TwitchSpider(scrapy.Spider):
     start_urls = ["https://www.twitch.tv"]
 
     def parse(self, response):
-        title = response.css('title::text').extract_first()
-        yield {
-            "title": title,
-        }
+        title = response.css("title::text").extract_first()
+        logging.warning("\nParse : " + title + "\n")
+        all_links = ["https://www.twitch.tv"]
+        for link in all_links:
+            yield Request(link, callback=self.parse_landing_page)
 
+    def parse_landing_page(self, response):
+        logging.info("showcase live : ")
+        logging.info(response.css('Layout-sc-1xcs6mc-0 cwtKyw find-me'))
+        # showcase live : 'Chaînes live qui pourraient vous plaire'
+        # for live in response.css('Layout-sc-1xcs6mc-0 cwtKyw find-me'):
+        #     logging.fatal("Start")
+        #     print(live)
+        #     logging.fatal("Start")
+        # response.class="Layout-sc-1xcs6mc-0 lcHstp"
+
+        name = "name"
+        game = "game"
+        title = "title"
+        label = "label"
+        description = "description"
+
+        yield TwitchStreamItem(
+            name_streamer=name,
+            name_game=game,
+            live_title=title,
+            live_label=label,
+            live_description=description,
+        )
