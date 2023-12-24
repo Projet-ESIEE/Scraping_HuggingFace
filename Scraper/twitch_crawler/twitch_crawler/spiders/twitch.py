@@ -25,13 +25,6 @@ class TwitchSpider(scrapy.Spider):
             logging.info(p)
 
 
-        # showcase live : 'Chaînes live qui pourraient vous plaire'
-        # for live in response.css('Layout-sc-1xcs6mc-0 cwtKyw find-me'):
-        #     logging.fatal("Start")
-        #     print(live)
-        #     logging.fatal("Start")
-        # response.class="Layout-sc-1xcs6mc-0 lcHstp"
-
         name = "name"
         game = "game"
         title = "title"
