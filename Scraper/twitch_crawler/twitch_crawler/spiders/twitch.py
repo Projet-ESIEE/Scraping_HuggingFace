@@ -19,6 +19,12 @@ class TwitchSpider(scrapy.Spider):
     def parse_landing_page(self, response):
         logging.info("showcase live : ")
         logging.info(response.css('Layout-sc-1xcs6mc-0 cwtKyw find-me'))
+
+        p_elements = response.css('footer div#twilight-sticky-footer-root p::text').extract()
+        for p in p_elements:
+            logging.info(p)
+
+
         # showcase live : 'Chaînes live qui pourraient vous plaire'
         # for live in response.css('Layout-sc-1xcs6mc-0 cwtKyw find-me'):
         #     logging.fatal("Start")
