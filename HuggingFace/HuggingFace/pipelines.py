@@ -8,6 +8,6 @@
 from itemadapter import ItemAdapter
 
 
-class NewscrawlerPipeline:
+class HuggingfacePipeline:
     def process_item(self, item, spider):
         return item

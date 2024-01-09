@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e87ca391-1a00-44cf-9927-d0dd119a153c" name="Changes" comment="init -FastAPI --done" />
+    <list default="true" id="e87ca391-1a00-44cf-9927-d0dd119a153c" name="Changes" comment="Nouvelle architecture">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/newscrawler/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/newscrawler/newscrawler/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/newscrawler/newscrawler/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/newscrawler/newscrawler/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/newscrawler/newscrawler/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/newscrawler/newscrawler/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/newscrawler/newscrawler/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/newscrawler/newscrawler/spiders/twitch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/newscrawler/scrapy.cfg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +27,7 @@
       <list>
         <option value="FastAPI main" />
         <option value="FastAPI test_main" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -21,10 +37,11 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2ZRq9q6e133zp877JHXxe1j5T08" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -33,7 +50,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "dev__scraper",
+    "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -55,6 +73,10 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="FastAPI.Scrapping_Twitch" />
+      <item itemvalue="HTTP Request.test_main | #1" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="HTTP Request.test_main | #1" />
@@ -95,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702395422517</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Nouvelle architecture">
+      <option name="closed" value="true" />
+      <created>1704805098286</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704805098286</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,9 +144,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init -FastAPI --done" />
-    <option name="LAST_COMMIT_MESSAGE" value="init -FastAPI --done" />
+    <MESSAGE value="Nouvelle architecture" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nouvelle architecture" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$main_scaper.coverage" NAME="main_scaper Coverage Results" MODIFIED="1702470033093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scraper" />
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$Unnamed.coverage" NAME="Scraper Coverage Results" MODIFIED="1703091895538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$tools.coverage" NAME="tools Coverage Results" MODIFIED="1702472137360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$main.coverage" NAME="main_scaper Coverage Results" MODIFIED="1702471723097" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scraper" />
     <SUITE FILE_PATH="coverage/Scrapping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1702395301674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1702999086041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
