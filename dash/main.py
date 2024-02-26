@@ -1,9 +1,10 @@
 import dash
+import pandas as pd
 from dash import html, dcc, callback
 from dash.dependencies import Input, Output
 import plotly.express as px
 from pymongo import MongoClient
-import pandas as pd
+
 
 # Connection a la db
 client = MongoClient("mongodb://localhost:27017")

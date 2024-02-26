@@ -4,6 +4,7 @@ from pymongo import MongoClient
 
 
 def numberise(nb_str):
+    if nb_str[-4:] == "\n\t\t\t": nb_str = nb_str[:-4]
     if nb_str[-1] == "k":
         return int(float(nb_str[:-1]) * 1000)
     if nb_str[-1] == "M":
