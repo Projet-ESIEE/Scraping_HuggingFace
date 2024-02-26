@@ -1,5 +1,4 @@
 import scrapy
-import logging
 from scrapy import Request
 from pymongo import MongoClient
 
@@ -22,14 +21,11 @@ class HuggingfacemodelsSpider(scrapy.Spider):
         self.data = []
 
     def parse(self, response):
-        title = response.css("title::text").extract_first()
-        logging.warning("\nParse : " + title + "\n")
-
         # Récupération des informations de la page actuelle
         self.model_page(response)
 
         # Génération de demandes pour les autres pages
-        for i in range(1, 100):
+        for i in range(1, 1000):
             yield Request("https://huggingface.co/models?p={}&sort=trending".format(i), callback=self.model_page)
 
     def model_page(self, response):

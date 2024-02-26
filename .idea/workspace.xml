@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e87ca391-1a00-44cf-9927-d0dd119a153c" name="Changes" comment="partie scrapping">
+    <list default="true" id="e87ca391-1a00-44cf-9927-d0dd119a153c" name="Changes" comment="scrapping + insert data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HuggingFace/HuggingFace/spiders/HuggingFaceModels.py" beforeDir="false" afterPath="$PROJECT_DIR$/HuggingFace/HuggingFace/spiders/HuggingFaceModels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuggingFace/HuggingFace/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Dash/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuggingFace/HuggingFace/items.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuggingFace/HuggingFace/middlewares.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuggingFace/HuggingFace/pipelines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuggingFace/HuggingFace/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuggingFace/HuggingFace/spiders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HuggingFace/scrapy.cfg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/HuggingFaceModels.py" beforeDir="false" afterPath="$PROJECT_DIR$/Scraper/HuggingFaceModels.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/Scrapy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scraper/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +67,12 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\march\PycharmProjects\Scraping_Twitch" />
+      <recent name="C:\Users\march\PycharmProjects\Scraping_Twitch\Scraper" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="test_main | #1 (1)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/FastAPI/test_main.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
@@ -101,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702395090821</updated>
       <workItem from="1702395181549" duration="303000" />
-      <workItem from="1708944251208" duration="6997000" />
+      <workItem from="1708944251208" duration="15834000" />
     </task>
     <task id="LOCAL-00001" summary="init -FastAPI --done">
       <option name="closed" value="true" />
@@ -143,11 +158,22 @@
       <option name="project" value="LOCAL" />
       <updated>1704814945460</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="scrapping + insert data">
+      <option name="closed" value="true" />
+      <created>1708952060805</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708952060805</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -164,7 +190,8 @@
     <MESSAGE value="init -FastAPI --done" />
     <MESSAGE value="Nouvelle architecture" />
     <MESSAGE value="partie scrapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="partie scrapping" />
+    <MESSAGE value="scrapping + insert data" />
+    <option name="LAST_COMMIT_MESSAGE" value="scrapping + insert data" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Scraping_Twitch$Scaper.coverage" NAME="Scaper Coverage Results" MODIFIED="1702998042783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scraper" />
@@ -172,7 +199,7 @@
     <SUITE FILE_PATH="coverage/Scraping_Twitch$main_scaper.coverage" NAME="main_scaper Coverage Results" MODIFIED="1702470033093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Scraper" />
     <SUITE FILE_PATH="coverage/Scraping_Twitch$Unnamed.coverage" NAME="Scraper Coverage Results" MODIFIED="1703091895538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Scraping_Twitch$tools.coverage" NAME="tools Coverage Results" MODIFIED="1702472137360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tools" />
-    <SUITE FILE_PATH="coverage/Scraping_Twitch$main.coverage" NAME="main Coverage Results" MODIFIED="1708944377786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FastAPI" />
+    <SUITE FILE_PATH="coverage/Scraping_Twitch$main.coverage" NAME="main Coverage Results" MODIFIED="1708983432689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Dash" />
     <SUITE FILE_PATH="coverage/Scraping_Twitch$HuggingFaceModels.coverage" NAME="HuggingFaceModels Coverage Results" MODIFIED="1708947385052" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/HuggingFace/HuggingFace/spiders" />
     <SUITE FILE_PATH="coverage/Scrapping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1702395301674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Scraping_Twitch$Scrapping_Twitch.coverage" NAME="Scrapping_Twitch Coverage Results" MODIFIED="1708944488297" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
