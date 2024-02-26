@@ -1,0 +1,29 @@
+version: '1.29'
+
+services:
+    # Base de données mongo
+  mongodb:
+    image: mongo
+    ports:
+    - "27017:27017"
+    container_name: mongodb
+    restart: always
+
+  # Scraper du site Hugging Face
+  Scraper:
+    build:
+      context: ./Scraper
+      dockerfile: Dockerfile_scrapy
+    depends_on:
+      - mongodb
+
+  # Application dash
+  dash_app:
+    build:
+      context: ./Dash
+      dockerfile: Dockerfile_dash
+    ports:
+      - "8050:8050"
+    depends_on:
+      Scraper:
+        condition: service_completed_successfully
