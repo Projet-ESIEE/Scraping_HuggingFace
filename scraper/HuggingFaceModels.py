@@ -25,7 +25,7 @@ class HuggingfacemodelsSpider(scrapy.Spider):
         self.model_page(response)
 
         # Génération de demandes pour les autres pages
-        for i in range(1, 100):
+        for i in range(1, 10):
             yield Request("https://huggingface.co/models?p={}&sort=trending".format(i), callback=self.model_page)
 
     def model_page(self, response):
