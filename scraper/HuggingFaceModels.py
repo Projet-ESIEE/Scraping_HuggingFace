@@ -3,16 +3,6 @@ from scrapy import Request
 from pymongo import MongoClient
 
 
-def numberise(nb_str):
-    if nb_str[-4:] == "\n\t\t\t":
-        nb_str = nb_str[:-4]
-    if nb_str[-1] == "k":
-        return int(float(nb_str[:-1]) * 1000)
-    if nb_str[-1] == "M":
-        return int(float(nb_str[:-1]) * 1000000)
-    return float(nb_str)
-
-
 class HuggingfacemodelsSpider(scrapy.Spider):
     name = "HuggingFaceModels"
     allowed_domains = ["huggingface.co"]
@@ -51,12 +41,12 @@ class HuggingfacemodelsSpider(scrapy.Spider):
                 i += 2
                 model_downloads = None
             else:
-                model_downloads = numberise(model_stat[5 - i][5:-4])
+                model_downloads = self.numberise(model_stat[5 - i][5:-4])
 
             if len(model.css("svg.flex-none.w-3.text-gray-400.mr-1")) == 0:
                 model_likes = 0
             else:
-                model_likes = numberise(model_stat[7 - i][5:-4])
+                model_likes = self.numberise(model_stat[7 - i][5:-4])
 
             self.data.append({
                 "company_name": company_name,
@@ -72,3 +62,12 @@ class HuggingfacemodelsSpider(scrapy.Spider):
         db = client['HuggingFace']
         collection = db['Models']
         collection.insert_many(self.data)
+
+    def numberise(self, nb_str):
+        if nb_str[-4:] == "\n\t\t\t":
+            nb_str = nb_str[:-4]
+        if nb_str[-1] == "k":
+            return int(float(nb_str[:-1]) * 1000)
+        if nb_str[-1] == "M":
+            return int(float(nb_str[:-1]) * 1000000)
+        return float(nb_str)
