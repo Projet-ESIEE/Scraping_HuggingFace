@@ -4,7 +4,8 @@ from pymongo import MongoClient
 
 
 def numberise(nb_str):
-    if nb_str[-4:] == "\n\t\t\t": nb_str = nb_str[:-4]
+    if nb_str[-4:] == "\n\t\t\t":
+        nb_str = nb_str[:-4]
     if nb_str[-1] == "k":
         return int(float(nb_str[:-1]) * 1000)
     if nb_str[-1] == "M":
@@ -26,7 +27,7 @@ class HuggingfacemodelsSpider(scrapy.Spider):
         self.model_page(response)
 
         # Génération de demandes pour les autres pages
-        for i in range(1, 10):
+        for i in range(1, 100):
             yield Request("https://huggingface.co/models?p={}&sort=trending".format(i), callback=self.model_page)
 
     def model_page(self, response):
