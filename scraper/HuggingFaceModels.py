@@ -58,7 +58,7 @@ class HuggingfacemodelsSpider(scrapy.Spider):
             })
 
     def closed(self, reason):
-        client = MongoClient('mongodb://localhost:27017/')
+        client = MongoClient('mongodb', 27017)
         db = client['HuggingFace']
         collection = db['Models']
         collection.insert_many(self.data)

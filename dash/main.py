@@ -7,7 +7,7 @@ from pymongo import MongoClient
 
 
 # Connection a la db
-client = MongoClient("mongodb://localhost:27017")
+client = MongoClient('mongodb', 27017)
 db = client['HuggingFace']
 collection = db['Models']
 
