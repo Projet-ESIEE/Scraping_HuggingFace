@@ -1,5 +1,10 @@
 version: '1.29'
 
+
+networks:
+  huggingFaceNet:
+    driver: bridge
+
 services:
     # Base de données mongo
   mongodb:
@@ -8,6 +13,9 @@ services:
     - "27017:27017"
     container_name: mongodb
     restart: always
+    networks:
+      - huggingFaceNet
+
 
   # scraper du site Hugging Face
   scraper:
@@ -16,6 +24,8 @@ services:
       dockerfile: Dockerfile_scraper
     depends_on:
       - mongodb
+    networks:
+        - huggingFaceNet
 
   # Application dash
   dash_app:
@@ -27,3 +37,5 @@ services:
     depends_on:
       scraper:
         condition: service_completed_successfully
+    networks:
+        - huggingFaceNet
